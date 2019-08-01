@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 3살버릇여든간당3 language="ko"로 바꾸기 -->
+<!-- 3살버릇여든간당2 > 옵션줄때 띄어쓰기 하지말자,쌍따옴표 쓰자 -->
+<!-- 3살버릇여든간다1 인덴팅은 2space -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Subway order sheet</title>
+  <!-- 02_html.pdf 77p -->
+  <!-- 제출하는 방법이 중요하고, 어디로 제출(action)하는지도 중요하다. -->
+</head>
+<body>
+<!-- 입력받을 수 있는 옵션들 -->
+
+  <form action=""><!-- action은 form을 어디로 제출할지를 정하는 옵션 -->
+    Text: <input type="text" placeholder="내용을 입력해 주세요"/> <!-- input('내용을 입력해주세요')랑 같음--><br/>
+    NUMBER: <input type="number" name="num"/><br/>
+    PASSWORD: <input type="password" name="pswd"/><br>
+    EMAIL: <input type="email"/><br>
+    DATE: <input type="date" value="2019-12-25"/><br/> <!-- value=""는 디폴트 벨류로 들어가있는 값-->
+
+    <!-- radio button에 name이 똑같다면 중복선택 불가. -->
+    <input type="radio" name="language" value="1"/>HTML <br/>
+    <!-- checked 어트리뷰트를 주면 그 버튼이 눌러진 효과가 있다. -->
+    <input type="radio" name="language" value="2" checked/>CSS <br/>
+    <input type="radio" name="language" value="3"/>JS <br/>
+    <hr/>
+
+    <!-- 선택하는것이기 때문에 옵션을 주어야 한다. -->
+    <select name="country" id="">
+      <option value="1">한국</option>
+      <!-- checked랑 비슷한 역할을 하는 selected -->
+      <option value="2" selected>중국</option>
+      <!-- disabled 어트리뷰트를 부여하면 일본을 선택할 수 없다. -->
+      <option value="3" disabled>일본</option>
+    </select><br/>
+
+    <!-- checkbox는 radio랑은 다르게 모든 옵션을 받을 수 있다. -->
+    <input type="checkbox" name="option" value="1"/>
+    <input type="checkbox" name="option" value="2"/><br/>
+
+    <input type="color" value="#FF6600"/><br/>
+    
+    <!-- 위에까지는 정보 입력파트, 밑에부분은 정보를 제출하는 파트 -->
+    <input type="submit" value="제출하기">
+    <!-- action에 경로를 설정하지 않았을경우 제자리로 돌아옴 -->
+  </form>  
+  
+
+</body>
+</html>
