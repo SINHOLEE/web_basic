@@ -1,0 +1,45 @@
+/* 그룹선택자 */
+
+h1, h2, h3, h4, h5, h6, .binch {
+  color: chocolate;
+}
+/* 인접 형제 선택자 */
+.red + .blue +div {
+  background-color: purple
+}
+
+
+/* 일반형제 선택자 */
+/* h2태그 뒤에 오는 모든 p태그에 적용한다. */
+/* 상위에 있어야한다. */
+h2 ~ p {
+  color: green;
+}
+
+/* 자식선택자 */
+/* parent클래스 안에 있는 li에만 적용하라 */
+.parent > li {
+  color: green;
+}
+
+/* 후손 선택자  */
+/* ancestor 클래스 안에 있는 모든 태그에 적용하라. */
+.ancestor li {
+  color: purple
+}
+/* div setting */
+
+div {
+  height: 100px;
+  width: 100px;
+  border : 1px solid black;
+}
+
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}\

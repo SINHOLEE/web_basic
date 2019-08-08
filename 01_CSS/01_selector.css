@@ -1,0 +1,37 @@
+/* 전체 선택자 '*' */
+* {
+  color: red;
+}
+
+/* 태그 선택자 */
+h1 {
+  color: blue;
+}
+
+/* class 선택자'.' */
+.pink {
+  color: pink;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ID 선택자 '#' */
+#green {
+  color: green
+}
+
+
+#purple {
+  color: purple;
+}
+
+#orange {
+  /* color: brown !important; 하지만 important는 사용하지 않는것을 추천 */
+  color: orange;
+}

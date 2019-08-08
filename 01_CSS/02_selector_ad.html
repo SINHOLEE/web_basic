@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selector Advanced</title>
+  <link rel="stylesheet" href="/web/01_CSS/02_selector_ad.css">
+</head>
+
+<body>
+  <!-- 그룹선택자 -->
+  <h1>그룹선택자 적용</h1><br />
+  <p class="binch">그룹선택자 적용받아여</p>
+
+  <!-- 인접 형제 선택자???!?!?!어렵다 -->
+  <!-- 형제의 뜻 - 같은 깊이(노드)에 위치하는 태그는 형제관계이다. 위의 h1과 p태그는 형제관계 -->
+  <!-- 인접형제 선택자 문법: s1 +s2 {atribute:value;} 같은 부모를 가지고 s1 바로 뒤에 오는 s2에 적용한다.-->
+  <div class="red">red!</div>
+  <div class="blue">blue!</div>
+  <div>purple</div>
+
+  <!-- 일반형제 선택자 -->
+  <!-- 문법 : s1 ~ s2 { atribute: value} -->
+  <!-- 같은 부모를 가지고 s1 뒤에 오는 s2에 적용한다.(바로 뒤에 올 필요 없음) -->
+  <h2>일반 형제 선택자</h2>
+  <p>형제</p>
+  <p>형제</p>
+
+  <!-- 자식 선택자 -->
+  <ol class="parent">
+    <ul>
+      <li>ol의 자식인 ul의 자식인 li</li>
+    </ul>
+  </ol>
+
+  <ol class="parent">
+    <li>ol의 자식 li</li>
+  </ol>
+
+  <!-- 후손 선택자 -->
+  <ol class="ancestor">
+    <ul>
+      <li>ol의 자식인 ul의 자식인 li</li>
+    </ul>
+  </ol>
+
+  <ol class="ancestor">
+    <li>ol의 자식 li</li>
+    <p>asdasd</p>
+  </ol>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS selector</title>
+  <link rel="stylesheet" href="/web/01_CSS/01_selector.css">
+</head>
+<body>
+  <p>빨간색</p>
+  <h1>태그 선택자</h1>
+  <h2 class="pink">클래스 선택자</h2>
+  <h3 id="green">ID 선택자</h3>
+  <!-- 아이디 선택자가 클래스 선택자보다 우선 순서입니다. -->
+  <h3 id="purple" class="pink"> 아이디 vs 클래스</h3>
+  <!-- 클래스선택자가 태그선택자보다 우선순위에 있다. -->
+  <h1 class="pink">클래스 vs 태그</h1>
+  <!-- 
+    핑그엔 핑크클래스로, 노랭은 노랭클래스로 적용하고 싶다면? 
+    span 태그와 div태그는 모두 의미는 없지만, 마크업을 해야 css를 적용시킬 수 있기 때문에 활용된다.
+    특정한 곳을 지정해야하고 따라서 선택자가 필요하게 되고, 선택자를 잡기 위해서는 마크업이 필요한 것이다.
+  -->
+  <p> <span class="pink">핑꾸핑꾸</span> , <span class="yellow">노랭노랭</span></p>
+
+  <!-- css파일에서 핑크 다음 옐로 클래스가 있기 때문에 아래처럼 핑크가 마지막에 써져 있음에도 결과는 노란색이 된다. -->
+  <p class="blod yellow pink">나는 무슨색일까요? 클래스를 동시에 선택하려면 띄어쓰기 하세요</p>
+
+  <p class="bold yellow pink" id="orange" style="color:grey"> 가장 강한 우선순위는?</p>
+</body>
+</html>

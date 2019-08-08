@@ -1,0 +1,35 @@
+h1 {
+  /* font-size = 2em = 32 */
+  color: darkgoldenrod;
+  /* 디폴트 픽셀이 16인데 그것의  50%인 8픽셀이되라!*/
+  /* 그치만 주변 환경에 영향에 따라 조금씩 달라질 수 있다. */
+  font-size: 50%;
+}
+
+section {
+  font-size: 50%
+}
+
+
+section > h2 {
+  color: skyblue;
+  font-size: 5em;
+  /* 상속의 영향 */
+  /* 섹션의 폰트사이즈 16 * 50% = 8 에 5배를 한 40이 된다. */
+}
+
+ul {
+  font-size: 2rem;
+  /* 만약 2em이라고 했다면 section에 상속받는 8px의 두배인 16이 될것이다. */
+  /* rem은 최상단의 디폴트 사이즈(16)에 영향을 받는다. */
+}
+
+/* view point는 어지간해선 쓰지 맙시당 */
+#box {
+  width: 50vw;
+  height: 50vw;
+  background-color: chocolate;
+  font-size: 5vw
+}
+
+

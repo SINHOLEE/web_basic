@@ -1,0 +1,64 @@
+div {
+  
+  color: white;
+  width: 120px;
+  height: 120px;
+  background-color: gray;
+}
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.padding {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.border {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: red;
+  border-top-color: blue;
+  /* radius -> 둥글게 깎아내기 */
+  border-radius: 10px
+}
+
+.margin-shorthand-1 {
+  margin : 10px;
+  /* 상하좌우 전체를 통틀어서 10px의 마진을 줘라라는 뜻 */
+}
+
+.margin-shorthand-2 {
+  margin: 10px 20px;
+  /* 상하 : 10px, 좌우 : 20px */
+}
+
+.margin-shorthand-3 {
+  margin: 10px 20px 30px;
+  /* 상 좌우 하 */
+}
+
+.margin-shorthand-4 {
+  margin: 10px 20px 30px 40px;
+  /* 상 부터 시계방향으로 적용 */
+}
+
+.align-center {
+  margin:0 auto;
+  /* 상하:0, 좌우:auto(오른쪽 왼쪽 나눠준다 = 가운데정렬) */
+}
+
+/* 오른쪽 정렬 */
+.align-right {
+  /* 왼쪽에 남은 너비를붙인다. */
+  margin-left: auto;
+
+}
