@@ -14,30 +14,33 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand text-white" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">Git</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="#">Python</a>
-        </li>
-
-      </ul>
-    </div>
-  </nav>
-
   <div class="container">
-    <form>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand text-white" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Git</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Python</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- form -->
+  <div class="container">
+    <form class="py-4">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -49,14 +52,16 @@
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password Confirmation</label>
-        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password Confirmation">
+        <label for="exampleInputPasswordconfimation1">Password Confirmation</label>
+        <input type="password" class="form-control" id="exampleInputPasswordconfimation1"
+          placeholder="Password Confirmation">
       </div>
 
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
   <br>
+  <!-- card -->
   <div class="container">
     <div class="row">
       <div class="card col-4" style="width: 18rem;">
@@ -85,9 +90,9 @@
       </div>
     </div>
   </div>
-
-  <footer class="fixed-bottom center">created by leesinho</footer>
-
+  <div class="container">
+    <footer class="fixed-bottom center">created by leesinho</footer>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
